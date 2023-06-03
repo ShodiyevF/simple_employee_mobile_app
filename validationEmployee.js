@@ -33,7 +33,7 @@ export default function App() {
       <View style={styles.employeeWrapper}>
         <Text style={styles.employeeName}>Hodim ismi: <Text style={styles.employee}>{name.length ? name : 'Aniq emas!!!'}</Text></Text>
         <View style={styles.employeeEditWrapper}>
-          <TextInput style={styles.inputEmployeeName} keyboardType='url' placeholder='e.g John Doe' onChangeText={(val) => setFullname(val)}/>
+          <TextInput style={styles.inputEmployeeName} keyboardType='default' placeholder='e.g John Doe' onChangeText={(val) => setFullname(val)}/>
           <Button style={styles.saveEmployeeInfoBtn} title='Saqlash' onPress={test}/>
         </View>
       </View>
